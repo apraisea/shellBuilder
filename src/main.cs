@@ -1,7 +1,8 @@
-class Program
+Console.Write("$ ");
+
+var command = Console.ReadLine();
+string[] knownCommands = { };
+if (!knownCommands.Contains(command))
 {
-    static void Main()
-    {
-        Console.Write("$ ");
-    }
+    Console.WriteLine($"{command}: command not found");
 }
